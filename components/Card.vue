@@ -8,25 +8,28 @@
       </header>
       <div class="card-content">
         <div class="content has-text-centered">
-          <b-icon
+          <!-- <b-icon
             :icon="icon"
             size="is-large"
             type="is-primary"
-          />
+          /> -->
+          <img :src="imageUrl" :alt="imageAlt">
         </div>
       </div>
-      <footer class="card-footer">
+      <!-- <footer class="card-footer">
         <div class="card-footer-item">
           <span>
             <slot />
           </span>
         </div>
-      </footer>
+      </footer> -->
     </div>
   </div>
 </template>
 
 <script>
+const images = require.context('~/assets/', false, /\.jpg$/)
+
 export default {
   props: {
     title: {
@@ -35,7 +38,20 @@ export default {
     },
     icon: {
       type: String,
+      required: false
+    },
+    image: {
+      type: String,
       required: true
+    },
+    imageAlt: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    imageUrl() {
+      return images(`./${this.image}`);
     }
   }
 }
