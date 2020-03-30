@@ -13,7 +13,7 @@
             size="is-large"
             type="is-primary"
           /> -->
-          <img :src="imageUrl" :alt="imageAlt">
+          <img class="card-image" :src="imageUrl" :alt="imageAlt">
         </div>
       </div>
       <!-- <footer class="card-footer">
@@ -56,3 +56,10 @@ export default {
   }
 }
 </script>
+
+<style>
+  .card-image {
+    margin: 0 auto;
+    height: 200px!important;
+  }
+</style>

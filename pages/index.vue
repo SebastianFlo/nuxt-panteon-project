@@ -264,10 +264,6 @@
     color: #d3d3d3;
   }
 
-  img {
-    height: 200px;
-  }
-
   .navbar-item img {
     max-height: 4.75rem;
   }
