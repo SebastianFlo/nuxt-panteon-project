@@ -40,15 +40,20 @@
           </h1>
 
           <h2 class="subtitle">
-            Livrare gratuitã in Baia Mare si imprejurimi.
+            Livrare gratuitã in Baia Mare și împrejurimi*
 
             <br>
 
-            Preturi negociabile.
+            Prețuri negociabile.
           </h2>
+
+
         </div>
 
         <div class="column is-8 is-offset-2 pan-map">
+          <p>* pentru comenzi de peste 200 RON</p>
+          <br>
+
           <div>
             <a class="button is-white is-outlined" target="blank" :href="directions">
               <span class="icon">
@@ -128,37 +133,37 @@
             <tr>
               <th class="has-text-white">luni:</th>
               <td>
-                <span>07:00–17:00</span>
+                <span>08:00–17:00</span>
               </td>
             </tr>
             <tr>
               <th class="has-text-white">marti:</th>
               <td>
-                <span>07:00–17:00</span>
+                <span>08:00–17:00</span>
               </td>
             </tr>
             <tr>
               <th class="has-text-white">miercuri:</th>
               <td>
-                <span>07:00–17:00</span>
+                <span>08:00–17:00</span>
               </td>
             </tr>
             <tr>
               <th class="has-text-white">joi:</th>
               <td>
-                <span>07:00–17:00</span>
+                <span>08:00–17:00</span>
               </td>
             </tr>
             <tr>
               <th class="has-text-white">vineri:</th>
               <td>
-                <span>07:00–17:00</span>
+                <span>08:00–17:00</span>
               </td>
             </tr>
             <tr>
               <th class="has-text-white">sâmbata:</th>
               <td>
-                <span>07:00–00:00</span>
+                <span>08:00–00:00</span>
               </td>
             </tr>
             <tr>
