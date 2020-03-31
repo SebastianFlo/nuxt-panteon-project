@@ -72,10 +72,11 @@
         <div class="columns pan-materials">
           <card :title="materials.accesorii_mobilier.title" class="is-one-quarter-desktop is-full-mobile" :imageAlt="materials.accesorii_mobilier.title" :image="materials.accesorii_mobilier.image">
           </card>
-
           <card :title="materials.accesorii_sarpante.title" class="is-one-quarter-desktop is-full-mobile" :imageAlt="materials.accesorii_sarpante.title" :image="materials.accesorii_sarpante.image">
           </card>
-          <card :title="materials.blaturi_de_bucatarie.title" class="is-one-quarter-desktop is-full-mobile" :imageAlt="materials.blaturi_de_bucatarie.title" :image="materials.blaturi_de_bucatarie.image">
+          <!-- <card :title="materials.blaturi_de_bucatarie.title" class="is-one-quarter-desktop is-full-mobile" :imageAlt="materials.blaturi_de_bucatarie.title" :image="materials.blaturi_de_bucatarie.image">
+          </card> -->
+          <card :title="materials.bca.title" class="is-one-quarter-desktop is-full-mobile" :imageAlt="materials.bca.title" :image="materials.bca.image">
           </card>
           <card :title="materials.boltari.title" class="is-one-quarter-desktop is-full-mobile" :imageAlt="materials.boltari.title" :image="materials.boltari.image">
           </card>
@@ -202,8 +203,12 @@
             title: 'Blaturi de bucatarie',
             image: 'material.blaturi_de_bucatarie.jpg'
           },
+          bca: {
+            title: 'BCA',
+            image: 'material.bca.jpg'
+          },
           boltari: {
-            title: 'Bolțari beton pentru zidărie, fundație, BCA',
+            title: 'Bolțari beton pentru zidărie, fundație',
             image: 'material.boltari.jpg'
           },
           ciment: {
@@ -219,7 +224,7 @@
             image: 'material.mortar.jpg'
           },
           pal: {
-            title: 'Pal melaminat',
+            title: 'Pal melaminat, Blaturi bucătarie',
             image: 'material.pal.jpg'
           },
           panouri_bordurate: {
@@ -268,6 +273,14 @@
   a {
     color: #d3d3d3;
   }
+
+  @media screen and (max-width: 1023px) {
+    .navbar-menu {
+      display: block !important;
+      background: none !important;
+    }
+  }
+
 
   .navbar-item img {
     max-height: 4.75rem;
