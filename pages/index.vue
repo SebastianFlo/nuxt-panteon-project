@@ -203,7 +203,7 @@
             image: 'material.blaturi_de_bucatarie.jpg'
           },
           boltari: {
-            title: 'Bolțari beton pentru zidărie, fundație',
+            title: 'Bolțari beton pentru zidărie, fundație, BCA',
             image: 'material.boltari.jpg'
           },
           ciment: {
