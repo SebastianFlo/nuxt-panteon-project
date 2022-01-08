@@ -40,7 +40,7 @@
           </h1>
 
           <h2 class="subtitle">
-            Livrare gratuitã in Baia Mare și împrejurimi*
+            Livrare in Baia Mare și împrejurimi
 
             <br>
 
@@ -51,15 +51,12 @@
         </div>
 
         <div class="column is-8 is-offset-2 pan-map">
-          <p>* pentru comenzi de peste 200 RON</p>
-          <br>
-
           <div>
             <a class="button is-white is-outlined" target="blank" :href="directions">
               <span class="icon">
                 <b-icon icon="map-marker" />
               </span>
-              <span>B-dul Bucuresti 49, Baia Mare</span>
+              <span>B-dul Bucuresti 44, Baia Mare</span>
             </a>
           </div>
 
@@ -140,7 +137,7 @@
         <h3 class="subtitle">Panteon, Baia Mare</h3>
 
         <p>
-          O afacere localã mică, nu corporație multinațională.
+          O afacere localã mică.
           <br>
           <br>
           De 20 de ani ajutăm maramureșenii să construiască.
