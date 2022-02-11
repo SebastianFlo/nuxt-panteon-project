@@ -1,0 +1,30 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+      - name: Installing project dependencies
+        run: npm install
+      - name: Building the project
+        run: npm run build
+      - name: Deploy
+        run: |
+          which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y  )
+          which rsync || ( apt-get update -y && apt-get install rsync -y )
+          eval $(ssh-agent -s)
+          ssh-add <(echo "$SSH_PRIVATE_KEY" )
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+          scp -r dist/* root@$SERVER_IP:$SITE_PATH
+    env:
+      SSH_PRIVATE_KEY: ${{secrets.SSH_KEY}}
+      SERVER_IP: ${{secrets.SERVER_IP}}
+      CI: false
