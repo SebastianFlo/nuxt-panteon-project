@@ -53,29 +53,29 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        items: [
-          {
-            title: 'Home',
-            icon: 'home',
-            to: { name: 'index' }
-          },
-          {
-            title: 'Inspire',
-            icon: 'lightbulb',
-            to: { name: 'inspire' }
-          },
-          {
-            title: 'Panteon',
-            icon: 'home-outline',
-            to: { name: 'panteon' }
-          }
-        ]
-      }
+export default {
+  data () {
+    return {
+      items: [
+        {
+          title: 'Home',
+          icon: 'home',
+          to: { name: 'index' }
+        },
+        {
+          title: 'Inspire',
+          icon: 'lightbulb',
+          to: { name: 'inspire' }
+        },
+        {
+          title: 'Panteon',
+          icon: 'home-outline',
+          to: { name: 'panteon' }
+        }
+      ]
     }
   }
+}
 </script>
 
 <style>
@@ -93,6 +93,12 @@
     background-size: cover;
   }
 
+  /* Mobile background */
+  @media (max-width: 768px) {
+    .hero.is-info {
+      background: #6b574e;
+    }
+  }
   .hero .nav,
   .hero.is-success .nav {
     -webkit-box-shadow: none;
