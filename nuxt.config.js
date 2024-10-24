@@ -8,11 +8,11 @@ export default {
     htmlAttrs: {
       lang: 'ro-Ro'
     },
-    title: 'Panteon Aspect | Baia Mare | Materiale de construcții',
+    title: 'Panteon Aspect | Baia Mare | Pal Melaminat | Debitare Pal',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Materiale de constructii in Baia Mare' }
+      { hid: 'description', name: 'description', content: 'Pal Melaminat | Debitare Pal in Baia Mare' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -46,7 +46,7 @@ export default {
   */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy',
+    'nuxt-buefy'
   ],
   /*
   ** Build configuration

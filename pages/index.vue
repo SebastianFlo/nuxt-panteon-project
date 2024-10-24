@@ -32,7 +32,7 @@
       </nav>
     </div>
 
-    <div class="hero-body">
+    <div>
       <div class="container has-text-centered">
         <div class="column is-8 is-offset-2">
           <h1 class="title">
@@ -82,7 +82,7 @@
           </div>
         </div>
 
-        <div class="columns pan-materials">
+        <div class="pan-materials">
           <!--
           <card
             :title="materials.accesorii_mobilier.title"
@@ -194,7 +194,7 @@
         <!-- </div> -->
         <!-- </div> -->
 
-        <section class="section columns pan-description">
+        <section class="section pan-description">
           <div class="container column is-8 is-offset-2 has-text-centered">
             <h3 class="subtitle">
               Panteon Aspect SRL, Baia Mare
